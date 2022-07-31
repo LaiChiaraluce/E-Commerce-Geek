@@ -1,0 +1,95 @@
+*{
+    font-family: 'Raleway', sans-serif;
+    background-color: #E5E5E5;
+}
+
+main{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+	width: 450px;
+}
+
+.titulo-editar{
+	margin-bottom: 16px;
+	color: #464646;
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: bold;
+	font-size: 32px;
+	line-height: 38px;
+}
+
+.form__span{
+	margin-bottom: 5px;
+	color: #464646;
+	font-family: 'Raleway';
+	font-style: normal;
+	font-size: 16px;
+	align-self: flex-start;
+}
+
+input{
+    background-color: #FFFFFF;
+    height: 60px;
+    width: 450px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #CCCCCC;
+	padding: 5px 10px;
+	font-size: 16px;
+}
+
+.aviso{
+	color: #F33F33;
+	text-align: center;
+}
+
+button{
+	cursor: pointer;
+	height: 51px;
+	width: 450px;
+	margin-top: 25px;
+	background-color: #2A7AE4;
+	color: #FFFFFF;
+	font-size: 16px;
+	border: 1px solid #2A7AE4;
+}
+
+@media screen and (max-width: 767px){
+	.titulo-editar{
+		font-size: 22px;
+	}
+	form{
+		height: 90vh;
+		width: 290px;
+	}
+	input{
+		height: 50px;
+		width: 290px;
+		font-size: 14px;
+	}
+	.aviso{
+		font-size: 14px;
+	}
+	button{
+		width: 290px;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px){
+	.titulo-editar{
+		font-size: 28px;
+	}
+	form{
+		height: 90vh;
+	}
+}

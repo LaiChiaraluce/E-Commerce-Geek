@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Alura Geek</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width = device-width">
+        <link rel="icon" href="../assets/imagenes/icono.png">
+        <link rel="stylesheet" type="text/css" href="../assets/css/editar-produc.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <main>
+            <form>
+                <h1 class="titulo-editar">Editar Producto</h1>
+                <span class="form__span">Nombre</span>
+                <input type="text" placeholder="Nuevo nombre del producto" class="nuevo-nombre" onKeyUp="validarNuevoNombre()">
+                <p class="nuevo-nombre__aviso aviso"></p>
+                <span class="form__span">Precio</span>
+                <input type="text" placeholder="Nuevo precio del producto" class="nuevo-precio" onKeyUp="validarNuevoPrecio()">
+                <p class="nuevo-precio__aviso aviso"></p>
+                <span class="form__span">URL</span>
+                <input type="text" placeholder="Url del producto" class="nueva-url" onKeyUp="validarNuevaImagen()">
+                <p class="nueva-url__aviso aviso"></p>
+                <button class="bttn-edit">Editar Producto</button>
+            </form>
+        </main>
+        <script type="text/javascript" src="../db/editar-producto.js"></script>
+    </body>
+</html>

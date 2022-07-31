@@ -1,0 +1,79 @@
+.banner{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+	height: 352px;
+	background-image: url(../imagenes/banner-imagen.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: #FFFFFF;
+}
+
+.banner__container{
+	width: 70%;
+	margin-bottom: 2rem;
+}
+
+.banner__titulo{
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 52px;
+	line-height: 61px;
+	margin-bottom: 1rem;
+}
+
+.banner__leyenda{
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 22px;
+	line-height: 26px;
+	margin-bottom: .7rem;
+}
+
+.banner__boton{
+	cursor: pointer;
+	height: 51px;
+	width: 129px;
+	background-color: #2A7AE4;
+	color: #FFFFFF;
+	font-size: 16px;
+	border: 1px solid #2A7AE4;
+}
+
+@media screen and (max-width: 767px){
+	.banner{
+		height: 192px; 
+		background-position: -220px 0px;
+	}
+	.banner__container{
+		width: 90%;
+		margin: 10px;
+	}
+	.banner__titulo{
+		font-size: 22px;
+		line-height: 26px;
+		margin-bottom: 8px;
+	}
+	.banner__leyenda{
+		font-size: 14px;
+		line-height: 16px;
+	}
+	.banner__boton{
+		width: 118px;
+		height: 40px;
+		font-size: 14px;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px){
+	.banner{
+		background-position: -270px 0px;
+	}
+	.banner__container{
+		width: 90%;
+		margin: 30px;
+	}
+}

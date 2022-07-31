@@ -1,0 +1,134 @@
+{
+  "star-wars": [
+    {
+      "nombre": "Casco Storm Trooper",
+      "precio": "700,00",
+      "url": "assets/imagenes/star-wars/star-wars-1.png",
+      "seccion": "star-wars",
+      "id": 1
+    },
+    {
+      "url": "assets/imagenes/star-wars/star-wars-2.png",
+      "nombre": "Mini Darth Vader",
+      "precio": "120,00",
+      "seccion": "star-wars",
+      "id": 2
+    },
+    {
+      "url": "assets/imagenes/star-wars/star-wars-3.png",
+      "nombre": "Yoda",
+      "precio": "440,00",
+      "seccion": "star-wars",
+      "id": 3
+    },
+    {
+      "url": "assets/imagenes/star-wars/star-wars-4.png",
+      "nombre": "Storm Trooper",
+      "precio": "240,00",
+      "seccion": "star-wars",
+      "id": 4
+    },
+    {
+      "nombre": "Baby Yoda",
+      "precio": "600,70",
+      "url": "assets/imagenes/star-wars/star-wars-5.png",
+      "seccion": "star-wars",
+      "id": 5
+    },
+    {
+      "url": "assets/imagenes/star-wars/star-wars-6.png",
+      "nombre": "Dark Side",
+      "precio": "190,00",
+      "seccion": "star-wars",
+      "id": 6
+    }
+  ],
+  "consolas": [
+    {
+      "nombre": "X-Box Joystick",
+      "precio": "5200,00",
+      "url": "assets/imagenes/consolas/consolas-1.png",
+      "seccion": "consolas",
+      "id": 7
+    },
+    {
+      "url": "assets/imagenes/consolas/consolas-2.png",
+      "nombre": "Blue Consola",
+      "precio": "3040,00",
+      "seccion": "consolas",
+      "id": 8
+    },
+    {
+      "nombre": "Nintendo Consola",
+      "precio": "4780,00",
+      "url": "assets/imagenes/consolas/consolas-3.png",
+      "seccion": "consolas",
+      "id": 9
+    },
+    {
+      "url": "assets/imagenes/consolas/consolas-4.png",
+      "nombre": "Half-Joystick",
+      "precio": "1900,00",
+      "seccion": "consolas",
+      "id": 10
+    },
+    {
+      "nombre": "PC",
+      "precio": "5400,00",
+      "url": "assets/imagenes/consolas/consolas-5.png",
+      "seccion": "consolas",
+      "id": 11
+    },
+    {
+      "url": "assets/imagenes/consolas/consolas-6.png",
+      "nombre": "Consola Retro",
+      "precio": "1200,00",
+      "seccion": "consolas",
+      "id": 12
+    }
+  ],
+  "diversos": [
+    {
+      "url": "assets/imagenes/diversos/diversos-1.png",
+      "nombre": "T-shirt Geek",
+      "precio": "160,00",
+      "seccion": "diversos",
+      "id": 13
+    },
+    {
+      "url": "assets/imagenes/diversos/diversos-2.png",
+      "nombre": "Joystick Geek",
+      "precio": "230,00",
+      "seccion": "diversos",
+      "id": 14
+    },
+    {
+      "url": "assets/imagenes/diversos/diversos-3.png",
+      "nombre": "Sonic",
+      "precio": "1360,00",
+      "seccion": "diversos",
+      "id": 15
+    },
+    {
+      "url": "assets/imagenes/diversos/diversos-4.png",
+      "nombre": "Reloj Geek",
+      "precio": "560,00",
+      "seccion": "diversos",
+      "id": 16
+    },
+    {
+      "url": "assets/imagenes/diversos/diversos-5.png",
+      "nombre": "Casco Virtual",
+      "precio": "19060,00",
+      "seccion": "diversos",
+      "id": 17
+    },
+    {
+      "nombre": "Pikachu",
+      "precio": "2260,00",
+      "url": "assets/imagenes/diversos/diversos-6.png",
+      "seccion": "diversos",
+      "id": 18
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+.todo-section{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    padding: 30px 10px 80px 10px;
+}
+
+.todo-section__encabezado{
+    display: none;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todo-section__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.todo-section__button{
+    cursor: pointer;
+	border: none;
+	width: 300px;
+	height: 60px;
+	font-size: 18px;
+	color: #FFFFFF;
+    margin-top: 65px;
+	background-color: #2A7AE4;
+}
+
+.todo-section__titulo{
+    align-self: flex-start;
+    margin-bottom: 15px;
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 767px){
+	.todo-section{
+        width: auto;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px){
+	.todo-section{
+        width: auto;
+    }    
+}

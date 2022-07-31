@@ -1,0 +1,13 @@
+.aviso{
+	margin-top: -10px;
+	margin-bottom: 20px;
+	color: #F33F33;
+	font-size: 16px;
+	font-family: 'Raleway';
+	font-style: normal;
+}
+
+.aviso__ingreso{
+	margin-top: 20px;
+	margin-bottom: 0px;
+}

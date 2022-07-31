@@ -1,0 +1,26 @@
+.vectores{
+	height: 30px;
+	width: 30px;
+	display: none;
+	margin-right: 15px;
+	margin-top: 10px;
+	cursor: pointer;
+	position: relative;
+	left: 85px;
+	box-sizing: border-box;
+}
+
+
+@media screen and (max-width: 767px){
+	.vectores{
+		left: 65px;
+		margin-right: 20px; 
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px){
+	.vectores{
+		left: 75px;
+		margin-right: 20px;
+	}
+}

@@ -1,0 +1,136 @@
+.section{ 
+	display: flex;
+	flex-direction: column;
+}
+
+.star-wars{
+	margin-bottom: 3rem;
+}
+
+.consolas{
+	margin-bottom: 3rem;
+}
+
+.diversos{
+	margin-bottom: 4.5rem;
+}
+
+.encabezado{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 30px;
+	margin-bottom: 16px;
+}
+
+.galeria{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.titulo{
+	color: #464646;
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 38px;
+	margin-right: 20px;
+}
+
+.link{
+	color: #2A7AE4;
+	text-decoration: none;
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 19px;
+	cursor: pointer;
+}
+
+.link__vector{
+	margin-left: 10px;
+	height: 16px;
+	width: 16px;
+}
+
+.bloque{
+	margin: 15px 5px;
+}
+
+.cajas{
+	width: 176px;
+	height: 174px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.precio{
+	font-size: 16px;
+}
+
+.nombre-produc{
+	margin-top: 8px;
+	color: #464646;
+}
+
+.precio{
+	margin-top: 8px;
+	font-weight: bold;
+	color: #464646;
+}
+
+.ver-produc{
+	margin-top: 8px;
+	color: #2A7AE4;
+	font-weight: bold;
+	font-size: 16px;
+	width: 140px;
+}
+
+@media screen and (max-width: 767px){
+	.galeria{
+		justify-content: center;
+	}
+	.encabezado{
+		height: 10px;
+		padding: 15px 20px 10px 20px;
+	}
+	.titulo{
+		font-size: 22px;
+	}	
+	.cajas{
+		margin-top: 10px;
+		width: 156px;
+	}
+	.bloque{
+		margin: 0px 5px 10px 5px;
+	}
+	.ver-produc{
+		font-size: 14px;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px){
+	.section{
+		padding: 0rem 1.5rem;
+	}
+	.galeria{
+		justify-content: flex-start;
+		width: 700px;
+	}
+	.encabezado{
+		width: 700px;
+	}
+	.cajas{
+		width: 164px;
+	}
+	.titulo{
+		font-size: 22px;
+	}
+	.bloque{
+		margin: 0px 5px 10px 5px;
+	}
+}

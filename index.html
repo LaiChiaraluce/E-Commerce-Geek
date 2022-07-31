@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Alura Geek</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width = device-width">
+		<link rel="icon" href="assets/imagenes/icono.png">
+		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/style-general.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/header.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/boton-menu-admin.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/banner.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/inicio-sesion.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/seccion-agregar-produc.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/galerias.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/boton-agregar-produc.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/vectores-edit-elim.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/formulario.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/footer.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/validaciones.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/filtro.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/galeria-todo.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<header class="header" id="cabecera">
+			<div class="header__container">
+				<div class="header__container--titulo">
+					<a href="index.html"><img src="assets/imagenes/icono-titulo.png" class="header__imagen"></a>
+					<input type="text" name="barra-busqueda" placeholder="¿Qué deseas buscar?" class="header__input">
+				</div>
+				<button class="header__button--admin">Menú Administrador</button><button class="header__button">Login</button>
+			</div>
+		</header>
+		<section class="inicio-sesion">
+			<h2 class="inicio-sesion__titulo">Iniciar Sesión</h2>
+			<form class="inicio-sesion__form">
+				<input type="email" name="email" class="inicio-sesion__form--input login__mail" placeholder="Escriba su correo electrónico" onKeyUp="validarMail()">
+				<div class="aviso__mail aviso"></div>
+				<input type="password" name="contraseña" class="inicio-sesion__form--input login__contra" placeholder="Escriba su contraseña" onKeyUp="validarContra()">
+				<div class="aviso__contra aviso"></div>
+				<button class="inicio-sesion__form--button" onClick="validarLogin(event)">Entrar</button>
+				<div class="aviso__ingreso aviso"></div>
+			</form>
+		</section>
+		<section class="agregado-producto">
+			<form class="agregado-producto__form">
+				<h2 class="agregado-producto__titulo">Agregar nuevo producto</h2>
+				<div class="contenedor__inputs">
+					<input type="text" name="nombre" class="agregado-producto__form--text inputs agregar__nombre" placeholder="Nombre del producto" onKeyUp="validarNombreProduc()">
+					<div class="aviso__nombreProduc aviso"></div>
+					<p class="agregar__categoria--aclaracion">Las categorias disponibles son: star wars / consolas / diversos</p>
+					<input type="text" name="categoria" class="agregado-producto__form--text inputs agregar__categoria" placeholder="Gategoría del producto" onKeyUp="validarCateProduc()">
+					<div class="aviso__categoriaProduc aviso"></div>
+					<input type="text" name="precio" class="agregado-producto__form--text inputs agregar__precio" placeholder="Precio del producto" onKeyUp="validarPrecioProduc()">
+					<div class="aviso__precioProduc aviso"></div>
+					<input type="text" name="url" class="agregado-producto__form--text inputs agregar__url" placeholder="URL de la imagen">
+					<textarea class="agregado-producto__form--textarea inputs" placeholder="Descripcion del producto" onKeyUp="validarDescProduc()"></textarea>
+					<div class="aviso__descripProduc aviso"></div>
+					<button class="agregado-producto__form--button" onClick="validarAgregadoProduc(event)">Agregar producto</button>
+					<div class="aviso__agregado aviso"></div>
+				</div>
+			</form>
+		</section>
+		<section class="banner">
+			<div class="banner__container">
+				<h2 class="banner__titulo">Febrero Promocional</h2>
+				<p class="banner__leyenda">Productos seleccionados con 33% de descuento</p>
+				<a href="#seccion-consolas"><button class="banner__boton" name="flor">Ver consolas</button></a>
+			</div>
+		</section>
+		<main class="main" id="todo">
+			<section class="todo-section">
+				<div class="todo-section__encabezado">
+					<h2 class="titulo">Todos los productos</h2>
+					<a href="#cabecera"><button class="boton-agregar">Agregar Producto</button></a>
+				</div>
+				<h2 class="todo-section__titulo titulo"></h2>
+				<div class="todo-section__container"></div>
+				<a href="index.html"><button class="todo-section__button">Volver al catálogo</button></a>
+			</section>
+			<section class="star-wars section">
+				<div class="star-wars__encabezado encabezado">
+					<h2 class="star-wars__titulo titulo">Star Wars</h2>
+					<div class="mas-info"><a href="#todo" class="star-wars__link link">Ver todo<img src="assets/imagenes/flecha.png" class="link__vector"></a></div>
+				</div>
+				<div class="star-wars__galeria galeria">
+				</div>
+				<span class="avisoFiltro"></span>
+			</section>
+			<section class="consolas section" id="seccion-consolas">
+				<div class="consolas__encabezado encabezado">
+					<h2 class="consolas__titulo titulo">Consolas</h2>
+					<div class="mas-info"><a href="#todo" class="consolas__link link">Ver todo<img src="assets/imagenes/flecha.png" class="link__vector"></a></div>
+				</div>
+				<div class="consolas__galeria galeria">
+				</div>
+				<span class="avisoFiltro"></span>
+			</section>
+			<section class="diversos section">
+				<div class="diversos__encabezado encabezado">
+					<h2 class="diversos__titulo titulo">Diversos</h2>
+					<div class="mas-info"><a href="#todo" class="diversos__link link">Ver todo<img src="assets/imagenes/flecha.png" class="link__vector"></a></div>
+				</div>
+				<div class="diversos__galeria galeria">
+				</div>
+				<span class="avisoFiltro"></span>
+			</section>
+			<section class="seccion-formulario">
+				<div class="seccion-formulario__container">
+					<div class="seccion-formulario__subcontainer">
+						<img src="assets/imagenes/icono-titulo.png" class="seccion-formulario__imagen">
+						<ul class="seccion-formulario__lista">
+							<li class="lista__item"><a href="#" class="lista__link">Quienes somos</a></li>
+							<li class="lista__item"><a href="#" class="lista__link">Politica de privacidad</a></li>
+							<li class="lista__item"><a href="#" class="lista__link">Programa de fidelidad</a></li>
+							<li class="lista__item"><a href="#" class="lista__link">Nuestras tiendas</a></li>
+							<li class="lista__item"><a href="#" class="lista__link">Quiero ser franquiciado</a></li>
+							<li class="lista__item"><a href="#" class="lista__link">Anuncie aqui</a></li>
+						</ul>
+					</div>
+					<form class="seccion-formulario__form">
+						<h3 class="form__titulo">Hable con nosotros</h3>
+						<input type="text" name="nombre" placeholder="Nombre" class="form__input nombre" onKeyUp="validarNombre()">
+						<div class="aviso__nombre aviso"></div>
+						<textarea placeholder="Escribe tu mensaje" class="form__input mensaje" onKeyUp="validarMensaje()"></textarea>
+						<div class="aviso__mensaje aviso"></div>
+						<button class="form__button" onClick="validarForm(event)">Enviar mensaje</button>
+					</form>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<p class="footer__p">Sitio Web desarrollado por Estanislao Chiaraluce</p>
+			<p class="footer__p">&copy Copyright 2022 - Todos los derechos reservados</p>
+		</footer>
+	</body>
+	<script type="text/javascript" src="js/login.js"></script>
+	<script type="text/javascript" src="js/administrador.js"></script>
+	<script type="text/javascript" src="js/agregarProducto.js"></script>
+	<script type="text/javascript" src="js/validarForm.js"></script>
+	<script type="text/javascript" src="js/validarLogin.js"></script>
+	<script type="text/javascript" src="js/validarAgregar.js"></script>
+	<script type="text/javascript" src="db/listado-productos.js"></script>
+	<script type="text/javascript" src="db/agregar-nuevoProducto.js"></script>
+	<script type="text/javascript" src="db/eliminar-producto.js"></script>
+	<script type="text/javascript" src="db/filtrar-productos.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</html>

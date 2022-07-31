@@ -1,0 +1,84 @@
+.header{
+	padding: 1rem;
+	background-color: #FFFFFF;
+}
+
+.header__container{
+	display: flex;
+	height: 100%;
+	margin: .2rem 10rem;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header__container--titulo{
+	display: flex;
+	align-items: center;
+}
+
+.header__input{
+	margin-left: 32px;
+	border-radius: 20px;
+	border: none;
+	font-size: 14px;
+	padding: 8px 16px; 
+	height: 25px;
+	width: 380px;
+	background-color: #F5F5F5;
+	background-image: url(../imagenes/vector-busqueda.png);
+	background-size: 17px;
+	background-repeat: no-repeat;
+	background-position: 370px;
+}
+
+.header__button{
+	cursor: pointer;
+	font-size: 16px;
+	width: 182px;
+	height: 51px;
+	background-color: #FFFFFF;
+	border: 1px solid #2A7AE4;
+	color: #2A7AE4;
+}
+
+@media screen and (max-width: 767px){
+	.header__container{
+		margin: 0rem;
+	}
+	.header__container--titulo{
+		margin-right: 5px;
+	}
+	.header__imagen{
+		width: 120px;
+		height: 35px;
+	}
+	.header__input{
+		display: none;
+	}
+	.header__button{
+		width: 110px;
+		height: 40px;
+		font-size: 14px;
+	}
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px){
+	.header__container{
+		margin: 0rem 1rem;
+	}
+	.header__imagen{
+		width: 120px;
+		height: 35px;
+	}
+	.header__input{
+		width: 272px;
+		background-position: 270px;
+		font-size: 14px;
+	}
+	.header__button{
+		width: 170px;
+		height: 40px;
+		font-size: 14px;
+	}
+}
